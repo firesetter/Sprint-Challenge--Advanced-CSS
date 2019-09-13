@@ -160,33 +160,33 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-header {
+header.nav {
   width: 100%;
   background: #F6F6F6;
 }
-header div.container {
+header.nav div.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-header div.container * {
+header.nav div.container * {
   width: 60%;
   text-align: center;
 }
-header div.container h1 {
+header.nav div.container h1 {
   color: #23293B;
   font-size: 4.25rem;
   padding: 1rem 0;
 }
-header div.container nav {
+header.nav div.container nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem 0;
 }
-header div.container nav a {
+header.nav div.container nav a {
   color: #454A59;
   text-decoration: none;
   font-size: 1.75rem;
@@ -200,6 +200,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro .intro-img {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
