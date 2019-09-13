@@ -4,6 +4,7 @@
   .intro {
     .intro-img {
       border-radius: 5px;
+      width: 100%;
     }
     h2 {
       padding: 15px;
@@ -17,13 +18,22 @@
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      img.sky,
+      img.launch {
+        display: none;
+      }
+      img {
+        width: 100%;
+      }
     }
   }
 
@@ -70,6 +80,32 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+
+    @media @phone {
+      .flex(@direction: column);
+
+      padding: 4% 2.5%;
+
+      .walk-img {
+        order: 1;
+        margin: 0;
+        width: 100%;
+      }
+
+      .walk-text {
+        width: 100%;
+        order: 2;
+
+        h3 {
+          padding: 2rem 0 0 0;
+        }
+
+        .btn {
+          order: 3;
+          .button(@width: 100%, @padding: 2rem);
+        }
       }
     }
   }

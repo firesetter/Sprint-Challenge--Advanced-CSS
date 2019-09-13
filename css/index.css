@@ -170,21 +170,31 @@ header.nav div.container {
   justify-content: center;
   align-items: center;
 }
-header.nav div.container * {
-  width: 60%;
-  text-align: center;
-}
 header.nav div.container h1 {
+  text-align: center;
+  width: 60%;
   color: #23293b;
   font-size: 4.25rem;
   padding: 1rem 0;
+}
+@media (max-width: 500px) {
+  header.nav div.container h1 {
+    width: 80%;
+  }
 }
 header.nav div.container nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
+  width: 60%;
   padding: 1rem 0;
+}
+@media (max-width: 500px) {
+  header.nav div.container nav {
+    width: 80%;
+  }
 }
 header.nav div.container nav a {
   color: #454a59;
@@ -203,6 +213,7 @@ footer {
 }
 .home .intro .intro-img {
   border-radius: 5px;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -213,13 +224,21 @@ footer {
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img.sky,
+  .home .space-images img.launch {
+    display: none;
+  }
+  .home .space-images img {
+    width: 100%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -267,4 +286,39 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 2.5%;
+  }
+  .home .walk .walk-img {
+    order: 1;
+    margin: 0;
+    width: 100%;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+    order: 2;
+  }
+  .home .walk .walk-text h3 {
+    padding: 2rem 0 0 0;
+  }
+  .home .walk .walk-text .btn {
+    order: 3;
+    background: #23293b;
+    color: #f6f7f8;
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.75rem;
+    width: 100%;
+  }
+  .home .walk .walk-text .btn:hover {
+    background: #f6f7f8;
+    color: #23293b;
+  }
 }

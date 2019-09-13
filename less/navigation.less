@@ -6,12 +6,8 @@ header.nav {
   div.container {
     .flex(@direction: column);
 
-    * {
-      width: 60%;
-      text-align: center;
-    }
-
     h1 {
+      .nav-text();
       color: @header-font-color;
       font-size: 4.25rem;
       padding: 1rem 0;
@@ -19,6 +15,7 @@ header.nav {
 
     nav {
       .flex(@justify: space-evenly);
+      .nav-text();
       padding: 1rem 0;
 
       a {

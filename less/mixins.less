@@ -1,4 +1,14 @@
 // Mixins Here
+
+.nav-text() {
+  text-align: center;
+  width: 60%;
+
+  @media @phone {
+    width: 80%;
+  }
+}
+
 .flex(@direction: row, @justify: center, @align: center) {
   display: flex;
   flex-direction: @direction;
