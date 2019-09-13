@@ -241,6 +241,72 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .contact h1 {
+  font-size: 4rem;
+  padding: 1rem 0;
+}
+.home .contact div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+.home .contact div p {
+  font-size: 2rem;
+}
+.home .contact div img {
+  border-radius: 20px;
+}
+.home .contact div.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+  text-align: left;
+}
+.home .contact div.form .form-field {
+  width: 60%;
+}
+.home .contact div.form .form-field input,
+.home .contact div.form .form-field textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin: 1em;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 4px #5e6164;
+  background: transparent;
+}
+.home .contact div.form .form-button {
+  width: 100%;
+}
+.home .contact div.form .form-button input {
+  background: #23293b;
+  color: #f6f7f8;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.75rem;
+  width: 40%;
+  margin: 0.5em;
+}
+.home .contact div.form .form-button input:hover {
+  background: #f6f7f8;
+  color: #23293b;
+}
+.home .contact div.form .form-button input.reset {
+  background: #5e6164;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.75rem;
+  width: 40%;
+}
+.home .contact div.form .form-button input.reset:hover {
+  background: white;
+  color: #5e6164;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
