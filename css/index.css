@@ -203,7 +203,22 @@ header.nav div.container nav a {
   color: #454a59;
   text-decoration: none;
   font-size: 1.75rem;
+  padding: 0.25rem 0;
   width: 100%;
+}
+header.nav div.container nav a:hover {
+  animation: blinkOnce 0.5s ease-in;
+  animation-fill-mode: forwards;
+}
+@keyframes blinkOnce {
+  0% {
+    background: #f6f6f6;
+    color: #23293b;
+  }
+  100% {
+    background: #23293b;
+    color: #f6f6f6;
+  }
 }
 footer {
   color: #22283B;

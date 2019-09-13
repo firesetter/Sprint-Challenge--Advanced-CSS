@@ -30,3 +30,18 @@
     color: @background;
   }
 }
+
+.flash-once(@duration: 1s, @primary-color: white, @secondary-color: black) {
+  @keyframes blinkOnce {
+    0% {
+      background: @primary-color;
+      color: @secondary-color;
+    }
+    100% {
+      background: @secondary-color;
+      color: @primary-color;
+    }
+  }
+  animation: blinkOnce @duration ease-in;
+  animation-fill-mode: forwards;
+}
