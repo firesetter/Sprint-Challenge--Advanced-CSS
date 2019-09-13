@@ -1,6 +1,7 @@
 // Navigation code here
 header {
   width: 100%;
+  background: @nav-bg;
 
   div.container {
     .flex(@direction: column);
@@ -9,8 +10,22 @@ header {
       width: 60%;
       text-align: center;
     }
+
+    h1 {
+      color: @header-font-color;
+      font-size: 4.25rem;
+      padding: 1rem 0;
+    }
+
     nav {
       .flex(@justify: space-evenly);
+      padding: 1rem 0;
+
+      a {
+        color: @nav-font;
+        text-decoration: none;
+        font-size: 1.75rem;
+      }
     }
   }
 }
