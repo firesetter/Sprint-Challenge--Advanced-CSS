@@ -1,0 +1,49 @@
+.home .contact {
+  h1 {
+    font-size: 4rem;
+    padding: 1rem 0;
+  }
+
+  div {
+    .flex(@align: flex-end);
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  div img {
+    border-radius: 20px;
+  }
+
+  div.form {
+    .flex(@direction: column);
+    margin: 2em 0;
+    text-align: left;
+
+    .form-field {
+      width: 60%;
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.5em;
+        margin: 1em;
+        border-radius: 2px;
+        box-shadow: inset 1px 2px 4px @shuttle-gray;
+        background: transparent;
+      }
+    }
+
+    .form-button {
+      width: 100%;
+      input {
+        .button(@width: 40%);
+        margin: 0.5em;
+      }
+      input.reset {
+        .button(@width: 40%, @background: @shuttle-gray, @text: white);
+      }
+    }
+  }
+}
